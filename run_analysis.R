@@ -85,9 +85,5 @@ rm(meanData,size)
 names(tidyData_mean)<-c("subject","activity","measure","mean")
 
 #### save the tidy datas for submission
-save(tidyData,file="PA1-tidyData.Rda")
-save(tidyData_mean,file="PA1-tidyData_mean.Rda")
-
-#### instruction for loading the saved data
-load("PA1-tidyData.Rda")
-load("PA1-tidyData_mean.Rda")
+write.table(tidyData,file="PA1-tidyData.csv", row.names=FALSE,col.names=TRUE)
+write.table(tidyData_mean,file="PA1-tidyData_mean.csv", row.names=FALSE,col.names=TRUE)
