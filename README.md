@@ -16,6 +16,17 @@ The data for the project is downloaded from
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
+### Included Files
+dataset_info.txt: the cook book that describe the raw dataset and the tidy dataset
+
+PA1-tidyData.txt: the tidy dataset that contains the mean and standard deviation of the raw data for each subject and each activity
+
+PA1-tidyData_mean: the tidy dataset derviced from the first dataset that contains average of measure for each subject and each activity
+
+run_analysis.R: the instruction list of the analysis code that format the raw data into tidy data
+
+DataSet-PA1.zip: the raw data set downloaded from the Coursera course, Getting and Cleaning Data, for peer assignment 1
+
 ### Instruction List
 The run_analysis.R instruction list contains the code for the following steps
 
@@ -28,8 +39,3 @@ The run_analysis.R instruction list contains the code for the following steps
 
 ### Code Book
 The file dataset_info.txt contains detail description of the data for both raw data and tidy data
-
-### Included Files
-PA1-tidyData.txt: the tidy dataset that contains the mean and standard deviation of the raw data for each subject and each activity
-
-PA1-tidyData_mean: the tidy dataset derviced from the first dataset that contains average of measure for each subject and each activity
