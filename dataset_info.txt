@@ -72,4 +72,8 @@ The tidy data (tidyData) has the following elements
 3. measure
 4. value
 
-The second dataset is then created based on the tidyData that is mean of each measure per subject per activity
+The second dataset is then created based on the tidyData that is mean of each measure per subject per activity with the following elements
+1. subject
+2. activity
+3. measure
+4. mean

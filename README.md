@@ -16,11 +16,14 @@ The data for the project is downloaded from
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The run_analysis.R contains the code for the following steps
+### Instruction List
+The run_analysis.R instruction list contains the code for the following steps
 
 1. download the dataset
 2. unzip and merge the training and testing dataset into one dataset
 3. extract mean and standard deviation of each measurement
 4. format the dataset into tidy data based on tidy data pricipal
-5. create a second dataset of the average of each subject and each activitythat based 
-   on the prevoius dataset of mean and standard deviaion
+5. create a second dataset of the average of each subject and each activitythat based on the prevoius dataset of mean and standard deviaion
+
+### Code Book
+The file dataset_info.txt contains detail description of the data for both raw data and tidy data

@@ -83,3 +83,11 @@ size<-length(meanData)
 tidyData_mean <- melt(meanData,id=c(1,2),measure.vars=c(3:size))
 rm(meanData,size)
 names(tidyData_mean)<-c("subject","activity","measure","mean")
+
+#### save the tidy datas for submission
+save(tidyData,file="PA1-tidyData.Rda")
+save(tidyData_mean,file="PA1-tidyData_mean.Rda")
+
+#### instruction for loading the saved data
+load("PA1-tidyData.Rda")
+load("PA1-tidyData_mean.Rda")
