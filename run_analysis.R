@@ -1,9 +1,12 @@
-file_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(file_url,destfile="DataSet-PA1.zip",mode="wb")
-unzip("DataSet-PA1.zip")
-date_downloaded <- date()
+## download the file if the file does not exists
+if (!file.exists("DataSet-PA1.zip")) {
+    file_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    download.file(file_url,destfile="DataSet-PA1.zip",mode="wb")
+    date_downloaded <- date()
+    unzip("DataSet-PA1.zip")
+}
 
-install.packages("reshape2")
+## load necessary library
 library(reshape2)
 
 ## load the data
@@ -85,5 +88,5 @@ rm(meanData,size)
 names(tidyData_mean)<-c("subject","activity","measure","mean")
 
 #### save the tidy datas for submission
-write.table(tidyData,file="PA1-tidyData.csv", row.names=FALSE,col.names=TRUE)
-write.table(tidyData_mean,file="PA1-tidyData_mean.csv", row.names=FALSE,col.names=TRUE)
+write.table(tidyData,file="PA1-tidyData.txt", row.names=FALSE,col.names=TRUE)
+write.table(tidyData_mean,file="PA1-tidyData_mean.txt", row.names=FALSE,col.names=TRUE)

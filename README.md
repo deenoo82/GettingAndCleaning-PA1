@@ -24,6 +24,12 @@ The run_analysis.R instruction list contains the code for the following steps
 3. extract mean and standard deviation of each measurement
 4. format the dataset into tidy data based on tidy data pricipal
 5. create a second dataset of the average of each subject and each activitythat based on the prevoius dataset of mean and standard deviaion
+5. save the two dataset to space delimited text file
 
 ### Code Book
 The file dataset_info.txt contains detail description of the data for both raw data and tidy data
+
+### Included Files
+PA1-tidyData.txt: the tidy dataset that contains the mean and standard deviation of the raw data for each subject and each activity
+
+PA1-tidyData_mean: the tidy dataset derviced from the first dataset that contains average of measure for each subject and each activity
